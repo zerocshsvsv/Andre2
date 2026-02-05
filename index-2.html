@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Xoc21.bot | Futuristic Hub</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: radial-gradient(circle at top, #0f2027, #000);
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background-image: 
+        linear-gradient(rgba(0,255,255,0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,255,255,0.05) 1px, transparent 1px);
+      background-size: 40px 40px;
+      z-index: -1;
+    }
+
+    .intro {
+      position: fixed;
+      inset: 0;
+      background: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 999;
+      animation: fadeOut 1.5s ease forwards;
+      animation-delay: 2.5s;
+    }
+
+    .intro h1 {
+      font-size: 3rem;
+      letter-spacing: 4px;
+      color: #00f6ff;
+      text-shadow: 0 0 20px #00f6ff;
+      animation: glitch 1.5s infinite;
+    }
+
+    @keyframes fadeOut {
+      to { opacity: 0; visibility: hidden; }
+    }
+
+    @keyframes glitch {
+      0% { text-shadow: 2px 2px #0ff; }
+      50% { text-shadow: -2px -2px #00ffcc; }
+      100% { text-shadow: 2px -2px #0ff; }
+    }
+
+    .container {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 420px;
+      background: rgba(255,255,255,0.08);
+      backdrop-filter: blur(15px);
+      border: 1px solid rgba(0,255,255,0.3);
+      border-radius: 20px;
+      padding: 35px 25px;
+      text-align: center;
+      box-shadow: 0 0 40px rgba(0,255,255,0.15);
+      animation: float 6s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%,100% { transform: translateY(0); }
+      50% { transform: translateY(-12px); }
+    }
+
+    .title {
+      font-size: 2.2rem;
+      font-weight: 800;
+      margin-bottom: 10px;
+      color: #00f6ff;
+      text-shadow: 0 0 15px #00f6ff;
+    }
+
+    .subtitle {
+      font-size: 0.95rem;
+      color: #c9faff;
+      margin-bottom: 30px;
+      opacity: 0.85;
+    }
+
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .btn {
+      padding: 15px;
+      border-radius: 14px;
+      text-decoration: none;
+      color: #fff;
+      font-weight: 600;
+      letter-spacing: 1px;
+      position: relative;
+      overflow: hidden;
+      transition: 0.4s;
+    }
+
+    .btn::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(120deg, transparent, rgba(255,255,255,0.3), transparent);
+      transform: translateX(-100%);
+      transition: 0.6s;
+    }
+
+    .btn:hover::before {
+      transform: translateX(100%);
+    }
+
+    .btn:hover {
+      transform: scale(1.04);
+      box-shadow: 0 0 25px rgba(0,255,255,0.5);
+    }
+
+    .wa-bot {
+      background: linear-gradient(135deg, #00c853, #009624);
+    }
+
+    .wa-group {
+      background: linear-gradient(135deg, #00f6ff, #007bff);
+    }
+
+    .telegram {
+      background: linear-gradient(135deg, #2aabee, #005b9f);
+    }
+
+    footer {
+      margin-top: 25px;
+      font-size: 0.7rem;
+      opacity: 0.6;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="intro">
+    <h1>Xoc21.bot</h1>
+  </div>
+
+  <div class="container">
+    <div class="card">
+      <div class="title">Xoc21.bot</div>
+      <div class="subtitle">
+        Futuristic Community Hub<br/>
+        One Click • One System • Full Power
+      </div>
+
+      <div class="buttons">
+        <a class="btn wa-bot" href="https://wa.me/6285822247742" target="_blank">
+          💬 Chat WhatsApp Bot
+        </a>
+
+        <a class="btn wa-group" href="https://chat.whatsapp.com/COCCVMeR68P5eAd0bsiFGC?mode=gi_c" target="_blank">
+          🚀 Join WhatsApp Group
+        </a>
+
+        <a class="btn telegram" href="https://t.me/Oxocr" target="_blank">
+          ✈️ Telegram @Oxocr
+        </a>
+      </div>
+
+      <footer>
+        © 2026 Xoc21.bot • Futuristic System
+      </footer>
+    </div>
+  </div>
+
+</body>
+</html>
